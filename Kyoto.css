@@ -13,6 +13,25 @@
     width: 99%;
     height: 45px;
 }
+#ul li a:hover{
+    background: rgb(241, 117, 117);
+}
+#ul{
+padding: 0;
+list-style: none;
+background: rgb(214, 15, 15);
+}
+#ul li {
+display: inline-block;
+position: relative;
+line-height: 21px;
+text-align: left;
+}
+#ul li a{
+display: block;
+padding: 8px 25px;
+color:rgb(0, 0, 0);
+}
 #logo{
     border-style: hidden;
     border-color: aliceblue;
@@ -52,7 +71,6 @@ h4:hover{
     border-radius: 00.5cm;
     padding: 0.5cm;
     background-color: pink;
-
     }
 #pink{
 
@@ -74,4 +92,23 @@ h4:hover{
     border-style: solid;
     border-color: darkgrey;
     
+}
+#strong {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    font-variant: small-caps;
+}
+#h12{
+    padding-top: 1.5cm;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+    font-variant: small-caps;
+}
+#aboutkyoto{
+    padding-right: 6cm;
+    padding-left: 6cm;
+    padding-top: 3cm;
 }
