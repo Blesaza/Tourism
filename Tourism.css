@@ -1,7 +1,7 @@
 #footer {
     bottom: 0;
     height: 150px;
-    background-color: rgb(218, 212, 212);
+    background-color: rgb(53, 52, 52);
     color: white;
 }
 #header {
@@ -69,14 +69,30 @@
 .months{
     flex: 50%;
     padding: 0 4px;
-    position: relative;
-   
+    
 }
 .months img{
     margin-top: 8px;
     vertical-align: middle;
 }
-.socialmedia{
-    padding-bottom: 0;
+
+.japanese{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.information{
+    flex: 50%;
+    padding: 0 4px;
+}
+.information img{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+#japaninfo{
+    margin-top: 2cm;
+    margin-bottom: 1cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
