@@ -1,0 +1,114 @@
+#footer {
+    
+    bottom: 0;
+    width: 99%;
+    height: 40px;
+    background-color: blanchedalmond;
+
+}
+#header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 99%;
+    height: 45px;
+}
+#ul li a:hover{
+    background: rgb(241, 117, 117);
+}
+#ul{
+padding: 0;
+list-style: none;
+background: rgb(214, 15, 15);
+}
+#ul li {
+display: inline-block;
+position: relative;
+line-height: 21px;
+text-align: left;
+}
+#ul li a{
+display: block;
+padding: 8px 25px;
+color:rgb(0, 0, 0);
+}
+#logo{
+    border-style: hidden;
+    border-color: aliceblue;
+    border-radius: 0.2cm;
+    background-color: red;
+   font-family: 'Lucida Handwriting', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:yellow
+}
+#content {
+    margin-top: 40px;
+    width: 99%;
+}
+#kyoto{
+    background-image: url('oska.png');
+    height: 700px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+#hkyoto{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#list {
+    background-color: rgb(223, 219, 219);
+    border-radius: 0.5cm;
+    width: 50%;
+}
+#about{
+    padding-left: 0.2cm;
+    
+}
+h4:hover{
+    background-color: rgb(241, 244, 245);
+}
+#table{
+    
+    border-radius: 00.5cm;
+    padding: 0.5cm;
+    background-color: pink;
+    }
+#pink{
+
+    border-radius: 00.2cm;
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#lpink{
+    
+    border-radius: 0.2cm;
+    background-color: white;
+}
+#main{
+    border-radius: 0.2cm;
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#seasonalhighlights{
+    border-style: solid;
+    border-color: darkgrey;
+    
+}
+#strong {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    font-variant: small-caps;
+}
+#h12{
+    padding-top: 1.5cm;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+    font-variant: small-caps;
+}
+#aboutkyoto{
+    padding-right: 6cm;
+    padding-left: 6cm;
+    padding-top: 3cm;
+}
