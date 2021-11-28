@@ -28,11 +28,6 @@
    font-family: 'Lucida Handwriting', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:yellow
 }
-#h{
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
 
 #content {
     margin-top: 40px;
@@ -54,12 +49,14 @@
     padding-top: 3cm;
 }
 .traveljapan{
-    top: 35%;
-   left: 40px;
+    position: absolute;
+    top: 40%;
+   left: 50px;
+   color: white;
   font-style: oblique;
   font-size: x-large;
-  font-family: 'Papyrus','	Brush Script MT','Lucida Handwriting','	Courier New';  
-}
+  font-family: 'Papyrus','	Brush Script MT','Lucida Handwriting','	Courier New'; 
+ }
 .japan{
     display: flex;
     flex-wrap: wrap;
@@ -93,5 +90,18 @@
     margin-bottom: 1cm;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
+}
+.importantnotice{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+#importantnotice{
+    margin-top: 3cm;
+    margin-bottom: 2cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+imponotice::hover{
+    background-color: rgb(194, 194, 245);
 }
 

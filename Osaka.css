@@ -14,13 +14,10 @@
     height: 45px;
 }
 #ul li a:hover{
-    background: rgb(241, 117, 117);
+    background: rgb(77, 134, 240);
 }
-#ul{
-padding: 0;
-list-style: none;
-background: rgb(214, 15, 15);
-}
+
+
 #ul li {
 display: inline-block;
 position: relative;
