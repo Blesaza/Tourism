@@ -91,17 +91,15 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-.importantnotice{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
-}
 #importantnotice{
-    margin-top: 3cm;
+    margin-top: 2cm;
     margin-bottom: 2cm;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-color: lightgrey;
 }
-imponotice::hover{
-    background-color: rgb(194, 194, 245);
+#importantnotice td:hover{
+    background-color: rgb(195, 230, 230);
 }
+
 
