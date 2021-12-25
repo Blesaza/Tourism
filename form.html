@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset ="utf-8">
-        <title>
-            Log In
-        </title>
-        
-        <link rel ="stylesheet" type="text/css" href="form.css">
-         </head>
-         <body class="body">
-             <form class="forma">
-                 <fieldset>
-    <legend id="login">Log In</legend>
-    <p>
-    <label for="name">
-        <span id="text">Name: </span>
-        <strong><abbr title="required">*</abbr></strong>
-      </label>
-      <input type="text" id="name" name="username">
-    </p>
-    <p>
-      <label for="mail">
-        <span id="text">E-mail: </span>
-        <strong><abbr title="required">*</abbr></strong>
-      </label>
-      <input type="email" id="mail" name="usermail">
-    </p>
-    <p>
-      <label for="pwd">
-        <span id="text">Password: </span>
-        <strong><abbr title="required">*</abbr></strong>
-      </label>
-      <input type="password" id="pwd" name="password">
-    </p>
-    <p>
+<head>
+  <title> Login and Registration Form Design </title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="login-page">
+    <div class="form">
+<form class="register-form">
+  <input type="text" placeholder="user name">
+  <input type="text" placeholder="password">
+  <input tybe="text" placeholder="email id ">
+  <button>Create</button>
+  <p class="message">Already Registered?<a href="#">Login</a></p>
+</form>
+<form class="login-form">
+<input type="text" placeholder="user name"/>
+<input type="text" placeholder="password"/>
+<button>login</button>
+<p class="message">Not Registered?<a href="#">Register</a></p>
 
-            <button type="submit">Log In</button>
-
-    
-    </p>
-
-
-
-
-                 </fieldset>
-
-         </form>
-
-
-         </body>
+</form>
+ </div>
+  </div>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script>
+    $('.message a').click(function(){
+      $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+    });
+  </script>
+</body>
 </html>
