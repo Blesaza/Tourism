@@ -73,10 +73,56 @@
 </div> 
     </header> 
     <body id="content">
-    <section id="japan">
-       <div class="traveljapan"> <h1>Travel Japan</h1>
-        <h4>Escape into nature</h4> </div>
-        </section>
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="japan.jpg" style="width:100%">
+            <div class="text">Travel Japan<br>Escape into Nature</div>
+        </div>
+        <div class = "slides fade">
+            <img src="jap.jpg" style="width:100%">
+            <div class="text">The Hotlist<br>Best of Japan 2022</div>
+        </div>
+        <div class = "slides fade">
+            <img src = "japan1.jpg" style = "width:100%">
+            <div class = "text">The Magic Of Nights</div>
+        </div>
+        <div class = "slides fade">
+            <img src = "japan3.jpg" style = "width:100%">
+            <div class = "text">Live It Like A Local <br> Top tips and insider guides from the people there</div>
+        </div>
+        <div class = "slides fade">
+            <img src = "japan4.jpeg" style = "width:100%">
+            <div class = "text">Monthly Inspiration From Japan</div>
+        </div>
+        <a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class = "next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+    
+            if (n > slides.length){slideIndex = 1}
+            if (n < 1){slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            
+        }
+    </script>
+    
     <section id="aboutjapan">
         <p id="About"><strong>Japan</strong> is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan,
             and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. 
@@ -241,8 +287,9 @@
                
         <footer class="footer">
             <div>
-            <p id="footer" style = "float:left">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
+            <p id="contactus" style = "float:left">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
             <br>Address: Xajë Jashari, 75 <br>Vushtrri, 42000</p>
+            <section id="socialmedia">
             <a href = "https://www.facebook.com/landaZM" target ="_blank">
             <img id="footerimg" src = "fb.png" alt = "Our page on facebook" height = "30" width = "30" style = "float:right"> </a>
             <a href = "https://www.instagram.com/anita.musaa/" target ="_blank">
@@ -251,9 +298,14 @@
             <img id="footerimg" src = "twitter.png" alt = "Our page on twitter" height = "30" width = "30" style = "float:right"></a>
             <a href="https://www.pinterest.com/dijanaazemi/_saved/" target = "_blank">
             <img id="footerimg" src = "pinterest.png" alt = "Our page on pinterest" height = "30" width = "30" style = "float:right"> </a>
-            
+            <p id="socialmedia" style = "float:right">Contact us on social media</p> </section>
+            <p id="aboutus" style = "float:center">Trying to find a place for your vacation?!<br>
+                Your travel buuddy helps you find best places in Japan<br>
+                Experience the seasonal and cultural beauty of Japan<br>
+                Travel offers & updates, and a chance to win our giveaways<br>
+                Live it like a local!</p>
             </div>
-            <p id="aboutus">Your travel buuddy helps you find best places in Japan <br></p>
+
         </footer> 
     </body>
     
