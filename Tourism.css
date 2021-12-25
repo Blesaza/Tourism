@@ -20,6 +20,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 2px;
 }
+#copyright{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30%;
+}
 #footerimg{
     margin-left: 2px;
     margin-bottom: 0;
@@ -100,6 +104,7 @@
 #logo{
     border-style: hidden;
     border-color: aliceblue;
+    margin: 2px;
     border-radius: 0.2cm;
     background-color: red;
    font-family: 'Lucida Handwriting', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
