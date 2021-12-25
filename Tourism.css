@@ -21,6 +21,7 @@
     margin-top: 2px;
 }
 #copyright{
+    margin-top: 1cm;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 30%;
 }
@@ -104,11 +105,23 @@
 #logo{
     border-style: hidden;
     border-color: aliceblue;
+    padding: 2px;
+    border-radius: 0.2cm;
+    background-color: red;
+   font-family: 'Lucida Handwriting', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:yellow;
+}
+#logof{
+    border-style: hidden;
+    border-color: aliceblue;
     margin: 2px;
     border-radius: 0.2cm;
     background-color: red;
    font-family: 'Lucida Handwriting', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:yellow
+    color:yellow;
+    padding: 2px;
+    margin-left: 30%;
+    margin-right: 56%;
 }
 
 #content {
