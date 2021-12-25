@@ -41,7 +41,7 @@
     }
 </style>
     </head>
-    <!--Kjo eshte nje website rreth turzimit ne Japoni!-->
+    <!--Kjo eshte nje website rreth turizmit ne Japoni!-->
     <header id="header">
             
         <div>
@@ -99,27 +99,116 @@
               <img src ="flag.png" alt="Flag of Japan" height="150" width="200" style="float:right" id="flag"> </div>
 
               <h2 id="japaninfo"><strong>Travel Highlights</strong></h2>
-              <div class="japan">
-                <div class="months">
-                    <img src="jan.jpg" height="250" width="150" class="imonths">
-                    <img src="feb.jpg" height="250" width="150" class="imonths">
-                    <img src="mar.jpeg" height="250" width="150" class="imonths">
-                    <img src="april.jpg" height="250" width="150" class="imonths">
+            <section class="travelhighlights">
+            <div class = "wrap">
+                <div id = "arrowl" class = "arrow"></div>
+                <div id ="slider">
+                    <div class = "slide slide1">
+                        <div class = "slide-content">
+                            <span>Japan in January</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide2">
+                        <div class = "slide-content">
+                            <span>Japan in February</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide3">
+                        <div class = "slide-content">
+                            <span>Japan in March</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide4">
+                        <div class = "slide-content">
+                            <span>Japan in April</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide5">
+                        <div class = "slide-content">
+                            <span>Japan in May</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide6">
+                        <div class = "slide-content">
+                            <span>Japan in June</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide7">
+                        <div class = "slide-content">
+                            <span>Japan in July</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide8">
+                        <div class = "slide-content">
+                            <span>Japan in August</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide9">
+                        <div class = "slide-content">
+                            <span>Japan in September</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide10">
+                        <div class = "slide-content">
+                            <span>Japan in October</span>
+                        </div>
+                    </div>
+
+                    <div class = "slide slide11">
+                        <div class = "slide-content">
+                            <span>Japan in November</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide12">
+                        <div class = "slide-content">
+                            <span>Japan in December</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="months">
-                    <img src="may.jpg" height="250" width="150" class="imonths">
-                    <img src="june.jpeg" height="250" width="150" class="imonths">
-                    <img src="july.jpg" height="250" width="150" class="imonths">
-                    <img src="august.jpg" height="250" width="150" class="imonths">
-                </div>
-                <div class="months">
-                    <img src="sep.jpeg" height="250" width="150" class="imonths">
-                    <img src ="oct.jpg" height="250" width="150" class="imonths">
-                    <img src="nov.jpg" height="250" width="150" class="imonths">
-                    <img src="dec.png" height="250" width="150" class="imonths">
-                </div>
+                <div id = "arrowr" class = "arrow"></div>
             </div>
-                 
+            <script>
+                let sliderImages = document.querySelectorAll('.slide'),
+                    arrowl = document.querySelector('#arrowl'),
+                    arrowr = document.querySelector('#arrowr'),
+                    current = 0;
+                    function reset(){
+                        for(let i =0; i < sliderImages.length; i++){
+                            sliderImages[i].style.display = 'none';
+                        }
+                    }
+                    function startSlide(){
+                        reset();
+                        sliderImages[0].style.display = 'block';
+                    }
+                    function slideLeft(){
+                        reset();
+                        sliderImages[current - 1].style.display = 'block';
+                        current--;
+                    }
+
+                    function slideRight(){
+                        reset();
+                        sliderImages[current + 1].style.display = 'block';
+                        current++;
+                    }
+
+                    arrowl.addEventListener('click', function() {
+                        if(current === 0){
+                            current = sliderImages.length;
+                        }
+                        slideLeft();
+                    });
+
+                    arrowr.addEventListener('click', function(){
+                        if(current === sliderImages.length - 1){
+                            current = -1
+                        }
+                        slideRight()
+                    });
+                    startSlide();
+            </script>
+              </section>   
             <h2 id="japaninfo">Japanese Government Information</h2>
                 <div class="japanese">
                     <div class="information">
@@ -150,19 +239,21 @@
                   
               
                
-        <footer id="footer">
+        <footer class="footer">
             <div>
-            <p style = "float:left" id="Contact" id="contact">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
+            <p id="footer" style = "float:left">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
             <br>Address: Xajë Jashari, 75 <br>Vushtrri, 42000</p>
-           <a href = "https://www.facebook.com/landaZM" target ="_blank">
-            <img src="fb.png" alt = "Our page on facebook" height ="30" width= "30" style = "float:right"> </a>
+            <a href = "https://www.facebook.com/landaZM" target ="_blank">
+            <img id="footerimg" src = "fb.png" alt = "Our page on facebook" height = "30" width = "30" style = "float:right"> </a>
             <a href = "https://www.instagram.com/anita.musaa/" target ="_blank">
-            <img src="instagram.jpg" alt = "Our page on instagram" height = "30" width = "30" style = "float:right"></a>
+            <img id="footerimg" src="instagram.jpg" alt = "Our page on instagram" height = "30" width = "30" style = "float:right"></a>
             <a href = "https://twitter.com/goldenjenny_" target ="_blank">
-            <img src = "twitter.png" alt = "Our page on twitter" height = "30" width = "30" style = "float:right"></a>
+            <img id="footerimg" src = "twitter.png" alt = "Our page on twitter" height = "30" width = "30" style = "float:right"></a>
             <a href="https://www.pinterest.com/dijanaazemi/_saved/" target = "_blank">
-            <img src ="pinterest.png" alt = "Our page on pinterest" height = "30" width = "30" style = "float:right"> </a>
+            <img id="footerimg" src = "pinterest.png" alt = "Our page on pinterest" height = "30" width = "30" style = "float:right"> </a>
+            
             </div>
+            <p id="aboutus">Your travel buuddy helps you find best places in Japan <br></p>
         </footer> 
     </body>
     
