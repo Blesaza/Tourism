@@ -8,7 +8,7 @@
     ul{
         padding: 0;
         list-style: none;
-        background: rgb(214, 15, 15);
+        background: rgb(4, 140, 145);
     }
     ul li {
         display: inline-block;
@@ -23,11 +23,11 @@
     }
     ul li a:hover{
         color:rgb(7, 4, 4);
-        background: rgb(241, 117, 117);
+        background: rgb(77, 134, 240);
     }
     ul li ul.cities{
         min-width: 100%;
-        background: rgb(245, 159, 223);
+        background: rgb(150, 192, 240);
         display: none;
         position: absolute;
         z-index: 999;
@@ -41,6 +41,7 @@
     }
 </style>
     </head>
+    <!--Kjo eshte nje website rreth turizmit ne Japoni!-->
     <header id="header">
             
         <div>
@@ -51,7 +52,7 @@
 <li style="float:right" id="about"><a href="#">Home</a></li> 
 <li style="float:right" id="about"> <a href="#">Cities &#9662;</a>
 <ul class="cities">
-    <li><a href="#">Tokyo</a></li>
+    <li><a href="tokyo.html">Tokyo</a></li>
     <li><a href="Osaka.html">Osaka</a></li>
     <li><a href="Kyoto.html">Kyoto</a></li>
     <li><a href="#">Nara</a></li>
@@ -72,10 +73,56 @@
 </div> 
     </header> 
     <body id="content">
-    <section id="japan">
-       <div class="traveljapan"> <h1 id="h">Travel Japan</h1>
-        <h4 id="h">Escape into nature</h4> </div>
-        </section>
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="japan.jpg" style="width:100%">
+            <div class="text">Travel Japan<br>Escape into Nature</div>
+        </div>
+        <div class = "slides fade">
+            <img src="jap.jpg" style="width:100%">
+            <div class="text">The Hotlist<br>Best of Japan 2022</div>
+        </div>
+        <div class = "slides fade">
+            <img src = "japan1.jpg" style = "width:100%">
+            <div class = "text">The Magic Of Nights</div>
+        </div>
+        <div class = "slides fade">
+            <img src = "japan3.jpg" style = "width:100%">
+            <div class = "text">Live It Like A Local <br> Top tips and insider guides from the people there</div>
+        </div>
+        <div class = "slides fade">
+            <img src = "japan4.jpeg" style = "width:100%">
+            <div class = "text">Monthly Inspiration From Japan</div>
+        </div>
+        <a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class = "next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+    
+            if (n > slides.length){slideIndex = 1}
+            if (n < 1){slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            
+        }
+    </script>
+    
     <section id="aboutjapan">
         <p id="About"><strong>Japan</strong> is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan,
             and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. 
@@ -86,39 +133,128 @@
             Japan is divided into 47 administrative perfectures and eight traditional regions.
              The Greater Tokyo area is the most populous metropolitan area in the world, with more than 37.4 million residents.
               </p>   
-    
+    <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27666493.228794366!2d119.01866068480263!3d32.17033100133164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2s!4v1637700542328!5m2!1sen!2s" 
-        width="600"
-         height="350"
+        width="450"
+         height="450"
           style="border:0;" 
           allowfullscreen="" 
           loading="lazy"
           float:left></iframe> 
           <img src="imperial.png" alt="Imperial seal" height="130" width="130" style="float:right">
-              <img src ="flag.png" alt="Flag of Japan" height="150" width="200" style="float:right" id="flag"> 
+              <img src ="flag.png" alt="Flag of Japan" height="150" width="200" style="float:right" id="flag"> </div>
 
               <h2 id="japaninfo"><strong>Travel Highlights</strong></h2>
-              <div class="japan">
-                <div class="months">
-                    <img src="jan.jpg" height="250" width="200" class="imonths">
-                    <img src="feb.jpg" height="250" width="200" class="imonths">
-                    <img src="mar.jpeg" height="250" width="200" class="imonths">
-                    <img src="april.jpg" height="250" width="200" class="imonths">
+            <section class="travelhighlights">
+            <div class = "wrap">
+                <div id = "arrowl" class = "arrow"></div>
+                <div id ="slider">
+                    <div class = "slide slide1">
+                        <div class = "slide-content">
+                            <span>Japan in January</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide2">
+                        <div class = "slide-content">
+                            <span>Japan in February</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide3">
+                        <div class = "slide-content">
+                            <span>Japan in March</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide4">
+                        <div class = "slide-content">
+                            <span>Japan in April</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide5">
+                        <div class = "slide-content">
+                            <span>Japan in May</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide6">
+                        <div class = "slide-content">
+                            <span>Japan in June</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide7">
+                        <div class = "slide-content">
+                            <span>Japan in July</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide8">
+                        <div class = "slide-content">
+                            <span>Japan in August</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide9">
+                        <div class = "slide-content">
+                            <span>Japan in September</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide10">
+                        <div class = "slide-content">
+                            <span>Japan in October</span>
+                        </div>
+                    </div>
+
+                    <div class = "slide slide11">
+                        <div class = "slide-content">
+                            <span>Japan in November</span>
+                        </div>
+                    </div>
+                    <div class = "slide slide12">
+                        <div class = "slide-content">
+                            <span>Japan in December</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="months">
-                    <img src="may.jpg" height="250" width="200" class="imonths">
-                    <img src="june.jpeg" height="250" width="200" class="imonths">
-                    <img src="july.jpg" height="250" width="200" class="imonths">
-                    <img src="august.jpg" height="250" width="200" class="imonths">
-                </div>
-                <div class="months">
-                    <img src="sep.jpeg" height="250" width="200" class="imonths">
-                    <img src ="oct.jpg" height="250" width="200" class="imonths">
-                    <img src="nov.jpg" height="250" width="200" class="imonths">
-                    <img src="dec.png" height="250" width="200" class="imonths">
-                </div>
+                <div id = "arrowr" class = "arrow"></div>
             </div>
-                 
+            <script>
+                let sliderImages = document.querySelectorAll('.slide'),
+                    arrowl = document.querySelector('#arrowl'),
+                    arrowr = document.querySelector('#arrowr'),
+                    current = 0;
+                    function reset(){
+                        for(let i =0; i < sliderImages.length; i++){
+                            sliderImages[i].style.display = 'none';
+                        }
+                    }
+                    function startSlide(){
+                        reset();
+                        sliderImages[0].style.display = 'block';
+                    }
+                    function slideLeft(){
+                        reset();
+                        sliderImages[current - 1].style.display = 'block';
+                        current--;
+                    }
+
+                    function slideRight(){
+                        reset();
+                        sliderImages[current + 1].style.display = 'block';
+                        current++;
+                    }
+
+                    arrowl.addEventListener('click', function() {
+                        if(current === 0){
+                            current = sliderImages.length;
+                        }
+                        slideLeft();
+                    });
+
+                    arrowr.addEventListener('click', function(){
+                        if(current === sliderImages.length - 1){
+                            current = -1
+                        }
+                        slideRight()
+                    });
+                    startSlide();
+            </script>
+              </section>   
             <h2 id="japaninfo">Japanese Government Information</h2>
                 <div class="japanese">
                     <div class="information">
@@ -134,23 +270,44 @@
                         
                     </div>
                 </div>
+                <table id="importantnotice">
+                    <tr>
+                        <th colspan="2">Important Notice</th>
+                    </tr>
+                    <tr>
+                        <td> <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/japan-travel-advisory.html#:~:text=Japan%20%2D%20Level%203%3A%20Reconsider%20Travel&text=Reconsider%20travel%20to%20Japan%20due%20to%20COVID%2D19%2Drelated%20restrictions." target="_blank">
+                            <p id="imponotice">Japan Safe Travel Information <img src="jnto.png" height="100" width="100"></p> </a></td>
+                        <td><a href="https://edition.cnn.com/travel/article/japan-travel-covid-19/index.html" target="_blank"> 
+                            <p id="imponotice">Covid-19 Restrictions <img src="jnto.png" height="100" width="100"></p> </a></td>
+                    </tr>
+                </table>
                   </section>
                   
               
                
-        <footer id="footer">
+        <footer class="footer">
             <div>
-            <p style = "float:left" id="Contact" id="contact">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
+            <p id="contactus" style = "float:left">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
             <br>Address: Xajë Jashari, 75 <br>Vushtrri, 42000</p>
-           <a href = "https://www.facebook.com/landaZM" target ="_blank">
-            <img src="fb.png" alt = "Our page on facebook" height ="30" width= "30" style = "float:right"> </a>
+            <section id="socialmedia">
+            <a href = "https://www.facebook.com/landaZM" target ="_blank">
+            <img id="footerimg" src = "fb.png" alt = "Our page on facebook" height = "30" width = "30" style = "float:right"> </a>
             <a href = "https://www.instagram.com/anita.musaa/" target ="_blank">
-            <img src="instagram.jpg" alt = "Our page on instagram" height = "30" width = "30" style = "float:right"></a>
+            <img id="footerimg" src="instagram.jpg" alt = "Our page on instagram" height = "30" width = "30" style = "float:right"></a>
             <a href = "https://twitter.com/goldenjenny_" target ="_blank">
-            <img src = "twitter.png" alt = "Our page on twitter" height = "30" width = "30" style = "float:right"></a>
+            <img id="footerimg" src = "twitter.png" alt = "Our page on twitter" height = "30" width = "30" style = "float:right"></a>
             <a href="https://www.pinterest.com/dijanaazemi/_saved/" target = "_blank">
-            <img src ="pinterest.png" alt = "Our page on pinterest" height = "30" width = "30" style = "float:right"> </a>
+            <img id="footerimg" src = "pinterest.png" alt = "Our page on pinterest" height = "30" width = "30" style = "float:right"> </a>
+            <p id="socialmedia" style = "float:right">Contact us on social media</p> </section>
+            <p id="aboutus" style = "float:center">Trying to find a place for your vacation?!<br>
+                Your travel buuddy helps you find best places in Japan<br>
+                Experience the seasonal and cultural beauty of Japan<br>
+                Travel offers & updates, and a chance to win our giveaways<br>
+                Live it like a local!</p>
+            <p id="copyright" style = "float: inline-end;">&#169; Copyrights 2021-2022. All rights reserved <br>
+                <p style = "float:left" id="logo">YourTravelBuddy.com</p> </p>
             </div>
+
         </footer> 
     </body>
     
