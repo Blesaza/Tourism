@@ -10,9 +10,11 @@ body{
     margin:auto;
 }
 .form{
-    position: :relative;
+    position: relative;
     z-index: 1;
-    backround:rgba(7,40,195,0.8);
+    border-style: solid;
+    border-color: whitesmoke;
+    background:transparent;
     max-width:360px;
     margin:0 auto 100px;
     padding:45px;
@@ -22,7 +24,7 @@ body{
     font-family:"Roboto",sans-serif;
     outline:1;
     background:#f2f2f2;
-    width=100%;
+    width: 100%;
     border: 0;
     margin:0 0 15px;
     padding:15px;
@@ -32,18 +34,18 @@ body{
 }
 .form input{
     font-family:"Roboto", sans-serif;
-    text-transform: :uppercase;
+    text-transform: uppercase;
     outline:0;
-    background:#4CAF50;
+    background:#cef8d0;
     width:100%;
     border:0;
     padding:15px;
-    color:#FFFFFF;
+    color:#080808;
     font-size:14px;
     cursor:pointer;
 }
 .form button:hover, .form button :active{
-    background:#43Q047;
+    background: #43A047;
 }
 .form .message{
     margin:15px 0 0 ;
