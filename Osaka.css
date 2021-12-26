@@ -1,10 +1,23 @@
 #footer {
     
     bottom: 0;
-    width: 99%;
-    height: 40px;
-    background-color: blanchedalmond;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(73,73,73);
+    margin-top:4cm;
 
+}
+#footerbutton{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(240,210,210);
+    border-radius: 0.2cm;
+    padding: 0.1cm;
+    margin-top: 1.3cm;
+    font-size: italic;
+}
+#footerbutton:hover{
+    background-color: rgb(187,186,186);
 }
 #header {
     position: fixed;
@@ -17,7 +30,10 @@
     background: rgb(77, 134, 240);
 }
 
-
+#svg{
+    margin-left: 90%;
+    margin-top: 33%;
+}
 #ul li {
 display: inline-block;
 position: relative;
@@ -108,4 +124,13 @@ h4:hover{
     padding-right: 6cm;
     padding-left: 6cm;
     padding-top: 3cm;
+}
+#h{
+    padding-left:1cm;
+    padding-top: 0.2cm;
+}
+#l{
+    padding-bottom: 0.5cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 0.3cm;
 }
