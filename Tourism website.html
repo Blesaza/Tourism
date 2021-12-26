@@ -256,7 +256,21 @@
                     });
                     startSlide();
             </script>
-              </section>   
+              </section> 
+              <section class = "convert">
+              <h3 id="convert">Convert Euro &euro; to Japanese Yen &yen;</h3>
+             <p>
+                 <label>Euro:</label>
+                 <input id="inputEuro" type="number" placeholder="Euro" 
+                 oninput = "euroConverter(this.value)" onchange="euroConverter(this.value)">
+             </p> 
+             <p>Yen: <span id="outputYen"></span></p>
+             </section>
+             <script>
+                 function euroConverter(valNum){
+                     document.getElementById("outputYen").innerHTML= valNum * 129.78;
+                 }
+             </script>
             <h2 id="japaninfo">Japanese Government Information</h2>
                 <div class="japanese">
                     <div class="information">
@@ -290,7 +304,7 @@
         <footer class="footer">
             <div>
             <p id="contactus" style = "float:left">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
-            <br>Address: Xajë Jashari, 75 <br>Vushtrri, 42000</p>
+            <br>Address: Xaj&euml; Jashari, 75 <br>Vushtrri, 42000</p>
             <section id="socialmedia">
             <a href = "https://www.facebook.com/landaZM" target ="_blank">
             <img id="footerimg" src = "fb.png" alt = "Our page on facebook" height = "30" width = "30" style = "float:right"> </a>

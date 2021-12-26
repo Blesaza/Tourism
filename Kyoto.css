@@ -46,6 +46,10 @@ color:rgb(0, 0, 0);
     object-fit: cover;
     background-repeat: no-repeat;
 }
+#svg{
+    margin-left: 90%;
+    margin-top: 33%;
+}
 #hkyoto{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
