@@ -1,9 +1,23 @@
-#footer{
-   
+#footer {
+    
     bottom: 0;
-    width: 99%;
-    height: 40px;
-    background-color: blanchedalmond;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(73, 73, 73);
+    margin-top: 4cm;
+
+}
+#footerbutton{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(240, 210, 210);
+    border-radius: 0.2cm;
+    padding: 0.1cm;
+    margin-top: 1.3cm;
+    font-style: italic;
+}
+#footerbutton:hover{
+    background-color: rgb(187, 186, 186);
 }
 #header{
     position: fixed;
@@ -50,6 +64,15 @@ color:rgb(0, 0, 0);
     padding: 5px;
 
 }
+#h {
+    padding-left: 1cm;
+    padding-top: 0.2cm;
+}
+#l{
+    padding-bottom: 0.5cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 0.1cm;
+}
 #h2{
     color: white;
     font-family:monospace;
@@ -79,6 +102,10 @@ color:rgb(0, 0, 0);
 }
 h4:hover{
     background-color: rgb(241,244,245);
+}
+#svg{
+    margin-left: 90%;
+    margin-top: 15%;
 }
 #table{
     border-radius: 00.5cm;
@@ -117,7 +144,12 @@ h4:hover{
     font-size: 23px;
     font-variant: small-caps;
 }
+.localspecialties{
+    border-spacing: 0..1cm;
+    padding: 25px;
+}
 #h12{
+    padding-top: 1.5cm;
     color: black;
     text-align: center;
     font-size: 35px;
@@ -141,3 +173,58 @@ h4:hover{
     border-color: darkgrey;
     
 }
+#perfectures{
+    margin-top: 3cm;
+}
+#explore{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 2cm;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(110, 110, 110, 0.8);
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
