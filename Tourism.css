@@ -33,7 +33,7 @@
 }
 
 #header {
-    position: fixed;
+    
     top: 0;
     background-color: white;
     width: 99%;
@@ -165,7 +165,7 @@
 }
 #importantnotice{
     margin-top: 2cm;
-    margin-bottom: 2cm;
+    margin-bottom: 5cm;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-style: solid;
     border-color: lightgrey;
@@ -186,7 +186,7 @@
     width: 50%;
     background-color: rgb(145, 240, 243);
     margin-top: 3cm;
-    margin-bottom: 4cm;
+    margin-bottom: 6cm;
 }
 .slideshow {
     margin: 0 auto;
@@ -276,4 +276,26 @@
     } to{
         transform: rotateY(360deg);
     }
+}
+
+.greetings{
+    margin-top: 2cm;
+    margin-bottom: 6cm;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    padding-bottom: 3cm;
+    padding-top: 2cm;
+   
+    
+}
+#greetings{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.video {
+    margin-bottom: 6cm;
+    padding-right: 4cm;
+}
+#video {
+    font-family: cursive;
 }
