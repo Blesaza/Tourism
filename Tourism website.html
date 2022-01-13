@@ -4,7 +4,7 @@
 <meta charset = "utf-8" />
 <title>Your travel buddy</title>
 <link rel ="stylesheet" type="text/css" href="Tourism.css">
-<script src="Tourism.js"></script>
+<script defer src="Tourism.js"></script>
 <style>
     ul{
         padding: 0;
@@ -101,7 +101,6 @@
         <a class = "next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -125,6 +124,7 @@
             
         }
     </script>
+    
     
     <section id="aboutjapan">
         <p id="About"><strong>Japan</strong> is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan,
@@ -163,9 +163,16 @@
                   </audio>
                 </div>
               </section>
-              <button id="videobutton">See a short Japan documentary</button>
-              <div class="video" id="video">
-                <div class="video-content"> 
+              <button data-modal-target="#modal" id="videobutton">More about Japan</button>
+              
+              <div class="modal" id="modal">
+                  <div class="modal-header">
+                <button data-close-button class="close-button">&times;</button> </div>
+                <div class = "modal-body">
+                <p>Japan is famous for natural sights like cherry blossoms and Mount Fuji, cutting-edge technology like Japanese cars and bullet trains, 
+                    wacky inventions like karaoke and vending machines,
+                     cultural values like politeness and punctuality, popular anime and manga, 
+                     and mouth-watering food like ramen and sushi.</p>
               <video width="700" height="500" controls>
                <source src="introductiontojapan.mp4" type="video/mp4">
                <source src="introductiontojapan.ogg" type="video/ogg">
@@ -173,7 +180,7 @@
               </video>
               </div>
               </div>
-              
+              <div id="overlay"></div>
               <h2 id="japaninfo"><strong>Travel Highlights</strong></h2>
             <section class = "slideshow">
                 <div class="content">
@@ -203,11 +210,7 @@
              </p> 
              <p>Yen: <span id="outputYen"></span></p>
              </section>
-             <script>
-                 function euroConverter(valNum){
-                     document.getElementById("outputYen").innerHTML= valNum * 129.78;
-                 }
-             </script>
+             
             
           
             <h2 id="japaninfo">Japanese Government Information</h2>
@@ -241,10 +244,10 @@
                   
                   <p id="data"></p>  
                   <script>
-                      const d = new Date();
-    let text = d.toTimeString();
-    document.getElementById("data").innerHTML = text;
-                  </script>
+                  const d = new Date();
+                  let text = d.toTimeString();
+                  document.getElementById("data").innerHTML = text;
+                </script>
                
         <footer class="footer">
             <div>
