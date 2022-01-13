@@ -4,6 +4,7 @@
 <meta charset = "utf-8" />
 <title>Your travel buddy</title>
 <link rel ="stylesheet" type="text/css" href="Tourism.css">
+<script src="Tourism.js"></script>
 <style>
     ul{
         padding: 0;
@@ -134,7 +135,8 @@
            Japan is the eleventh-most populous country in the world, as well as one of the most densely populated and urbanized. About three-fourths of the country's terrain is mountainous, concentrating its population of 125.36 million on narrow coastal plains.
             Japan is divided into 47 administrative perfectures and eight traditional regions.
              The Greater Tokyo area is the most populous metropolitan area in the world, with more than 37.4 million residents.
-              </p>   
+              </p> 
+       
     <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27666493.228794366!2d119.01866068480263!3d32.17033100133164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2s!4v1637700542328!5m2!1sen!2s" 
         width="450"
@@ -161,7 +163,17 @@
                   </audio>
                 </div>
               </section>
-
+              <button id="videobutton">See a short Japan documentary</button>
+              <div class="video" id="video">
+                <div class="video-content"> 
+              <video width="700" height="500" controls>
+               <source src="introductiontojapan.mp4" type="video/mp4">
+               <source src="introductiontojapan.ogg" type="video/ogg">
+                   Your browser does not support the video tag.
+              </video>
+              </div>
+              </div>
+              
               <h2 id="japaninfo"><strong>Travel Highlights</strong></h2>
             <section class = "slideshow">
                 <div class="content">
@@ -196,14 +208,8 @@
                      document.getElementById("outputYen").innerHTML= valNum * 129.78;
                  }
              </script>
-            <section class="video">
-            <h3 id="video">Japan in 90 seconds!</h3>
-            <video width="700" height="500" controls>
-             <source src="introductiontojapan.mp4" type="video/mp4">
-             <source src="introductiontojapan.ogg" type="video/ogg">
-                 Your browser does not support the video tag.
-            </video>
-            </section>
+            
+          
             <h2 id="japaninfo">Japanese Government Information</h2>
                 <div class="japanese">
                     <div class="information">
@@ -230,9 +236,15 @@
                             <p id="imponotice">Covid-19 Restrictions <img src="jnto.png" height="100" width="100"></p> </a></td>
                     </tr>
                 </table>
+                
                   </section>
                   
-              
+                  <p id="data"></p>  
+                  <script>
+                      const d = new Date();
+    let text = d.toTimeString();
+    document.getElementById("data").innerHTML = text;
+                  </script>
                
         <footer class="footer">
             <div>
@@ -249,7 +261,7 @@
             <img id="footerimg" src = "pinterest.png" alt = "Our page on pinterest" height = "30" width = "30" style = "float:right"> </a>
             <p id="socialmedia" style = "float:right">Contact us on social media</p> </section>
             <p id="aboutus" style = "float:center">Trying to find a place for your vacation?!<br>
-                Your travel buuddy helps you find best places in Japan<br>
+                Your travel buddy helps you find best places in Japan<br>
                 Experience the seasonal and cultural beauty of Japan<br>
                 Travel offers & updates, and a chance to win our giveaways<br>
                 Live it like a local!</p>
