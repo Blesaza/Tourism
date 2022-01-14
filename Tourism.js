@@ -25,3 +25,17 @@ function drop(event){
     var data = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(data));
 }
+
+
+function myFunction(){
+    let text;
+    let person = prompt("Enter the city you want to visit: ", "Tokyo");
+    if (person == null || person == ""){
+        text = "User cancelled!";
+    }
+    else {
+        text = "You chose " + person + ". Nice choice!";
+    }
+    document.getElementById("city").innerHTML = text;
+}
+   

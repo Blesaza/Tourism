@@ -112,7 +112,7 @@
         </div>
         <div class = "slides fade">
             <img src = "japan4.jpeg" style = "width:100%">
-            <div class = "text">Monthly Inspiration From Japan</div>
+        <div class = "text">Monthly Inspiration From Japan</div>
         </div>
         <a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class = "next" onclick="plusSlides(1)">&#10095;</a>
@@ -247,16 +247,18 @@
                 </div>
                 <div id="dd2" ondrop="drop(event)" ondragover="allowDrop(event)">
                 </div>
+                <button id="citybutton" onclick="myFunction()">Which city do you want to visit?</button>
+                <p id="city"></p>
                 
                   </section>
                   
                   <p id="data"></p>  
-                  <script>
+                          
+                    <script>
                   const d = new Date();
                   let text = d.toTimeString();
                   document.getElementById("data").innerHTML = text;
                 </script>
-               
         <footer class="footer">
             <div>
             <p id="contactus" style = "float:left">Contact us <br>Vushtrri,Kosova<br>Tel: +383 45 811 882 <br>Viber: +383 44 408 054 <br>Whatsapp: +383 49 861 857
